@@ -1,0 +1,145 @@
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 575px;
+    margin: 0 auto;
+    margin-left: 360px;
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-info {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .contact-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .status {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color:  #7004fc;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .phone-icon::before {
+    content: "\260E"; /* Símbolo de teléfono */
+  }
+  
+  .video-icon::before {
+    content: "\1F4F9"; /* Símbolo de cámara */
+  }
+  .chat-body {
+    padding: 10px;
+    height: 510px;
+    background-color: #fafafa;
+    width: 100%;
+    overflow-y: auto; /* Permite el scroll vertical */
+    overflow-x: hidden; /* Desactiva el scroll horizontal */
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    max-width: 80%; /* Ajusta el ancho máximo de los mensajes para evitar desbordamiento horizontal */
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word; /* Asegura que el texto largo se ajuste en varias líneas */
+  }
+  
+  .message.sent {
+    background-color: #7004fc17;
+    color: white;
+    margin-left: auto;
+  }
+  
+  .message.received {
+    background-color: #e0e0e0;
+    color: black;
+    margin-right: auto;
+  }
+  
+  .timestamp {
+    font-size: 10px;
+    color: #FFFF;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+/* Container styling */
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #f6fafd;
+  border-radius: 25px;
+  border: 1px solid #e2e7eb;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+.input-container input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* Icon styling (attachment, emoji, camera) */
+.icon {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #808080;
+}
+
+/* Microphone button styling */
+.microphone-btn {
+  background-color: #7000ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.microphone-btn svg {
+  fill: white;
+}
+.uploaded-image {
+  width: 100%; /* O el tamaño que prefieras */
+  max-width: 200px; /* Limita el ancho máximo */
+  height: 200px; /* Asegura una altura fija */
+  object-fit: cover; /* Ajusta la imagen sin distorsionar */
+  border-radius: 8px; /* Para mantener el estilo de bordes redondeados */
+  margin: 10px 0;
+}

@@ -1,0 +1,29 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Fondo blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    width: 300px; /* Ancho de la barra de búsqueda */
+    border: none; /* Sin borde */
+  }
+  
+  .search-bar img {
+    width: 20px; /* Tamaño del ícono de búsqueda */
+    margin-right: 10px; /* Espacio entre el ícono y el input */
+    opacity: 0.5; /* Color gris claro para el ícono */
+  }
+  
+  .search-bar input {
+    border: none; /* Sin borde en el input */
+    outline: none; /* Sin borde de enfoque */
+    font-size: 16px; /* Tamaño del texto */
+    width: 100%; /* Que ocupe todo el espacio disponible */
+    color: #7a7a7a; /* Color del texto */
+  }
+  
+  .search-bar input::placeholder {
+    color: #b3b3b3; /* Color del placeholder */
+  }
+  
